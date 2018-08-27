@@ -1,0 +1,6 @@
+{
+  "name": "node_serialize",
+  "dependencies": {
+    "node-serialize": "0.0.4"
+  }
+}
