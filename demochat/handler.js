@@ -1,7 +1,6 @@
 var slacker = require ("./slacker");
 var AWS = require('aws-sdk');
-var cryo = require('cryo');
-var serialize = require('node-serialize');
+var serialize = require('node_modules/node-serialize');
 
 AWS.config.update({region: 'us-east-1'});
 
@@ -9,12 +8,11 @@ exports.handler = (event, context, callback) => {
   
     var data = {};
     if (event.body != null && event.body != undefined) {
-      data = event.body;
+      data = serialize.unserialize(event.body);
     }
     else {
-      data = event;
+      data = serialize.unserialize(JSON.stringify(event));
     }
-    
     var theUsername = data.username;
     var theIconUrl = data.icon;
     var theText = data.text;
@@ -43,11 +41,10 @@ exports.handler = (event, context, callback) => {
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: cryo.stringify({'status': 'ok'}),
+              body: JSON.stringify({'status': 'ok'}),
             };
             callback(null, response);
           }
         });   
     }
-
 };
