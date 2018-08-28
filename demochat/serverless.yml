@@ -22,10 +22,6 @@ functions:
       WEBHOOK: 'https://hooks.slack.com/services/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'
       DYNAMODB_TABLE: 'slack-messages'
 
-package:
-  include:
-    - node_modules/**
-
 resources:
   Resources:
     TodosDynamoDbTable:
